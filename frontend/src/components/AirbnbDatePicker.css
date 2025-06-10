@@ -1,0 +1,215 @@
+.airbnb-date-picker {
+  font-family: Arial, sans-serif;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.navigation button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.calendar-container {
+  display: flex;
+  gap: 20px;
+}
+
+.calendar-month {
+  width: 280px;
+}
+
+.calendar-header {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 40px);
+  grid-auto-rows: 40px;
+  gap: 0;
+}
+
+.calendar-day-name {
+  text-align: center;
+  font-weight: bold;
+}
+
+.calendar-day {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1.5px solid transparent; */
+  border-radius: 50%;
+  /* transition: background-color 0.3s, border-color 0.3s; */
+  /* box-sizing: border-box; */
+}
+
+.calendar-day:not(.empty):not(.disabled):not(.calendar-day.selected-start):hover {
+  background: linear-gradient(to left, transparent 50%, #f0f0f0 50%);
+  /* border: 1.5px solid black; */
+  border-radius: 0;
+}
+
+.calendar-day:not(.empty):not(.disabled):not(.calendar-day.selected-start):hover::before {
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  border: 1.5px solid black;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.calendar-day:not(.empty):not(.disabled):not(.calendar-day.selected-start):hover span {
+  position: relative;
+  /* color: black; */
+  z-index: 3; /* Ensure text is above the black circle */
+}
+
+.calendar-day.empty {
+  cursor: default;
+  
+}
+
+.calendar-day.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.calendar-day.disabled:hover {
+  background-color: transparent;
+  border: transparent;
+}
+
+.calendar-day.selected-start {
+  background: linear-gradient(to right, transparent 50%, #f0f0f0 50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+}
+
+/* .calendar-day.selected-start::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 0;
+  width: 50%;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+} */
+
+.calendar-day.selected-start::after {
+  content: ''; /* Create a pseudo-element for the black filled circle */
+  width: 40px; /* Width of the black circle */
+  height: 40px; /* Height of the black circle */
+  position: absolute;
+  background-color: black; /* Black circle */
+  border-radius: 50%; /* Rounded circle */
+  z-index: 2; /* Place it above the background */
+}
+
+.calendar-day.selected-start span {
+  position: relative;
+  color: white; /* Text color for visibility on black */
+  z-index: 3; /* Ensure text is above the black circle */
+}
+
+.calendar-day.selected-end {
+  background-color: #f0f0f0;
+}
+
+.calendar-day.selected-end::before {
+  content: ''; /* Create a pseudo-element for the black filled circle */
+  width: 40px; /* Width of the black circle */
+  height: 40px; /* Height of the black circle */
+  position: absolute;
+  background: linear-gradient(to left, transparent 50%, #f0f0f0 50%);
+  border-radius: 0; /* Rounded circle */
+  z-index: 1; /* Place it above the background */
+}
+
+.calendar-day.selected-end::after {
+  content: ''; /* Create a pseudo-element for the black filled circle */
+  width: 40px; /* Width of the black circle */
+  height: 40px; /* Height of the black circle */
+  position: absolute;
+  background-color: black; /* Black circle */
+  border-radius: 50%; /* Rounded circle */
+  z-index: 2; /* Place it above the background */
+}
+
+.calendar-day.selected-end span {
+  position: relative;
+  color: white; /* Text color for visibility on black */
+  z-index: 3; /* Ensure text is above the black circle */
+}
+
+.calendar-day.in-range {
+  background-color: #f0f0f0;
+  border: transparent;
+}
+
+.calendar-day.in-range::before {
+  content: ''; /* Create a pseudo-element for the black filled circle */
+  width: 40px; /* Width of the black circle */
+  height: 40px; /* Height of the black circle */
+  position: absolute;
+  background-color: #f0f0f0; /* Black circle */
+  border-radius: 0; /* Rounded circle */
+  z-index: 1; /* Place it above the background */
+}
+
+.calendar-day.in-range span {
+  position: relative;
+  color: black; /* Text color for visibility on black */
+  z-index: 2; /* Ensure text is above the black circle */
+}
+
+.selected-dates {
+  margin-top: 15px;
+}
+
+/* Booking Button */
+.booking-button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff5a5f; /* Airbnb's red color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-button:hover {
+  background-color: #e14c50; /* Darken on hover */
+  transform: translateY(-2px);
+}
+
+.booking-button:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}

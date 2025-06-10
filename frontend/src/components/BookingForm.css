@@ -1,0 +1,70 @@
+.booking-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .booking-form-container h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .booking-form-label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .booking-form-value {
+    font-size: 1.2em;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  
+  .primary-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #2a9d8f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  .primary-button:hover {
+    background-color: #21867a;
+  }
+  
+  .secondary-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .secondary-button:hover {
+    background-color: #bbb;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .booking-form-container {
+      padding: 15px;
+    }
+  }
+  

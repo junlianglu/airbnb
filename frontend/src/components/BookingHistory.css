@@ -1,0 +1,35 @@
+/* BookingHistory.css */
+
+.booking-history-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+  }
+  
+  .booking-history-container h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .loading-message,
+  .error-message,
+  .no-bookings-message {
+    text-align: center;
+    font-size: 1.1em;
+    color: #777;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  
+  .booking {
+    margin-bottom: 20px;
+  }
+  

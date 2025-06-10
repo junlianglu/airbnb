@@ -1,0 +1,53 @@
+.booking-success-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+  }
+  
+  .booking-success-container h2 {
+    font-size: 2em;
+    color: #2a9d8f;
+    margin-bottom: 10px;
+  }
+  
+  .booking-success-container p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .success-icon {
+    font-size: 3em;
+    color: #2a9d8f;
+    margin-bottom: 10px;
+  }
+  
+  .back-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #2a9d8f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #21867a;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .booking-success-container {
+      padding: 20px;
+    }
+  }
+  

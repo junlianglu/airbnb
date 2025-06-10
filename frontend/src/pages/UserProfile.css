@@ -1,0 +1,45 @@
+.user-profile-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .user-profile-container h1 {
+    font-size: 2em;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+  }
+  
+  .user-profile-container p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .loading-text {
+    font-size: 1.2em;
+    color: #777;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .no-user-text {
+    font-size: 1.2em;
+    color: #777;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .user-profile-container {
+      padding: 20px;
+    }
+  }
+  

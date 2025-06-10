@@ -1,0 +1,17 @@
+.booking-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  
+  .booking-page h2 {
+    font-size: 2em;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+  }
+  
+  /* You can reuse the styles for the BookingForm here */
+  

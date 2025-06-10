@@ -1,0 +1,77 @@
+.property-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  max-width: 300px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+}
+
+.property-card h3 {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+}
+
+.property-card p {
+  color: #666;
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.property-card-image-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.property-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Hide carousel buttons by default */
+.carousel-button {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+/* Show buttons on hover over the image container */
+.property-card-image-carousel:hover .carousel-button {
+  display: block;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button:first-of-type {
+  left: 10px;
+}
+
+.carousel-button:last-of-type {
+  right: 10px;
+}
+

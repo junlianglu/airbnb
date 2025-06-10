@@ -1,0 +1,100 @@
+.create-property-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.create-property-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.upload-images-section input[type="file"] {
+  padding: 8px;
+}
+
+.suggestions-list {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  list-style: none;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.suggestions-list li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.amenities-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.amenities-checkbox input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.create-button {
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.create-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.create-button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.error-message {
+  color: #d9534f;
+  font-size: 14px;
+}
