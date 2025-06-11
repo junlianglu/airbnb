@@ -3,7 +3,6 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const MapComponent = ({ latitude, longitude }) => {
   const position = { lat: latitude, lng: longitude };
-  alert(latitude);
   return (
     <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_PLACES_API_KEY}>
       <GoogleMap
